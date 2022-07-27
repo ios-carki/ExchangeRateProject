@@ -7,45 +7,42 @@
 
 import UIKit
 
-struct ExchangeRate {
-    var currencyRate: Int {
-        willSet(newExRate) {
-            print("환율이 \(currencyRate)에서 \(newExRate)로 변경될 예정입니다.")
-        }
-        didSet {
-            print("환율적용 완료 \(oldValue) -> \(currencyRate)")
-        }
-    }
-    var USD: Int
-    
-    var KRW: Int {
-        willSet(exKRW) {
-            print("한국돈 \(KRW)를 환율을 적용하면 \(exKRW)가 됩니다.")
-        }
-        didSet {
-            print("\(oldValue)원은 \(KRW)에 환율을 적용한 값이에요")
-        }
-    }
-    
-    var exResult: String {
-        get {
-            let exValue = KRW / 1200
-            let calExRate = USD / KRW
-            return "한국돈 \(KRW)원에 현재환율 \(calExRate)원을 적용시키면 미국돈 \(USD)달러가 됩니다"
-        }
-    }
-    
-    
-    
-}
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var exRate1: UILabel!
+    @IBOutlet weak var userTextField: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    @IBOutlet weak var exRate2: UILabel!
+    @IBOutlet weak var result2Label: UILabel!
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        exRateLabelDesign(labelName1: exRate1, labelName2: exRate2)
     }
-
+    
+    func exRateLabelDesign(labelName1: UILabel, labelName2: UILabel) {
+        labelName1.text = "환율 1100원일때"
+        labelName1.textAlignment = .center
+        labelName1.font = .boldSystemFont(ofSize: 20)
+        
+        labelName2.text = "환율 1350원일때"
+        labelName2.textAlignment = .center
+        labelName2.font = .boldSystemFont(ofSize: 20)
+        
+    }
+    
+    @IBAction func buttonClicked(_ sender: UIButton) {
+        resultLabel.text = userTextField.text
+    }
+    
 
 }
 

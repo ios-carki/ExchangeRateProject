@@ -24,6 +24,7 @@
 		C3CD43472891237B009884B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3CD434A2891237B009884B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3CD434C2891237B009884B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3CD43522891485A009884B7 /* ExchangeTesk.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ExchangeTesk.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 				C3CD43472891237B009884B7 /* Assets.xcassets */,
 				C3CD43492891237B009884B7 /* LaunchScreen.storyboard */,
 				C3CD434C2891237B009884B7 /* Info.plist */,
+				C3CD43522891485A009884B7 /* ExchangeTesk.playground */,
 			);
 			path = ExchangeRateProject;
 			sourceTree = "<group>";
