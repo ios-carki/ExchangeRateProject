@@ -13,7 +13,7 @@ struct ExchangeRate {
             print("환율이 \(currencyRate)에서 \(newExRate)로 변경될 예정입니다.")
         }
         didSet {
-            print(<#T##items: Any...##Any#>)
+            print("환율적용 완료 \(oldValue) -> \(currencyRate)")
         }
     }
     var USD: Int
